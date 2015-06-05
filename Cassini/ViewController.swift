@@ -10,14 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let ivc = segue.destinationViewController as? ImageViewController {
+            if let identifer = segue.identifier {
+                switch identifer {
+                    case "earth":
+                        ivc.imageURL = DemoURL.NASA.Earth
+                        ivc.title = "Earth"
+                    case "saturn":
+                        ivc.imageURL = DemoURL.NASA.Saturn
+                        ivc.title = "Saturn"
+                    case "cassini":
+                        ivc.imageURL = DemoURL.NASA.Cassini
+                        ivc.title = "Cassini"
+                default: break
+                }
+            }
+        }
     }
 
 

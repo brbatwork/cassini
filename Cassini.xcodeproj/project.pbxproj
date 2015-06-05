@@ -13,6 +13,8 @@
 		2864662B1B21C8D300437157 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2864662A1B21C8D300437157 /* Images.xcassets */; };
 		2864662E1B21C8D300437157 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2864662C1B21C8D300437157 /* LaunchScreen.xib */; };
 		2864663A1B21C8D300437157 /* CassiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286466391B21C8D300437157 /* CassiniTests.swift */; };
+		286466441B21C92200437157 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286466431B21C92200437157 /* ImageViewController.swift */; };
+		286466461B21CC7700437157 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286466451B21CC7700437157 /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		286466331B21C8D300437157 /* CassiniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CassiniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		286466381B21C8D300437157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		286466391B21C8D300437157 /* CassiniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniTests.swift; sourceTree = "<group>"; };
+		286466431B21C92200437157 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		286466451B21CC7700437157 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 				286466231B21C8D300437157 /* AppDelegate.swift */,
 				286466251B21C8D300437157 /* ViewController.swift */,
 				286466271B21C8D300437157 /* Main.storyboard */,
+				286466431B21C92200437157 /* ImageViewController.swift */,
 				2864662A1B21C8D300437157 /* Images.xcassets */,
 				2864662C1B21C8D300437157 /* LaunchScreen.xib */,
 				286466211B21C8D300437157 /* Supporting Files */,
+				286466451B21CC7700437157 /* DemoURL.swift */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286466461B21CC7700437157 /* DemoURL.swift in Sources */,
 				286466261B21C8D300437157 /* ViewController.swift in Sources */,
+				286466441B21C92200437157 /* ImageViewController.swift in Sources */,
 				286466241B21C8D300437157 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
