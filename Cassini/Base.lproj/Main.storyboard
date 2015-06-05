@@ -48,17 +48,23 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbO-rM-jfo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XWw-D7-ku6">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gbO-rM-jfo" firstAttribute="leading" secondItem="oF5-G3-Umr" secondAttribute="leading" id="4zW-5l-e9d"/>
+                            <constraint firstAttribute="centerY" secondItem="XWw-D7-ku6" secondAttribute="centerY" id="gy1-iO-sFx"/>
                             <constraint firstItem="gbO-rM-jfo" firstAttribute="bottom" secondItem="inj-b4-n9e" secondAttribute="top" id="m0A-X2-d2N"/>
                             <constraint firstItem="gbO-rM-jfo" firstAttribute="top" secondItem="oF5-G3-Umr" secondAttribute="top" id="sBr-2k-tqz"/>
+                            <constraint firstAttribute="centerX" secondItem="XWw-D7-ku6" secondAttribute="centerX" id="w4V-km-RZA"/>
                             <constraint firstAttribute="trailing" secondItem="gbO-rM-jfo" secondAttribute="trailing" id="x4f-M1-kmS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="gbO-rM-jfo" id="grW-Zy-DQm"/>
+                        <outlet property="spinner" destination="XWw-D7-ku6" id="utn-JL-uvr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPU-AY-eD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
